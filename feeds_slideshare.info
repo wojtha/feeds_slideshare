@@ -1,0 +1,7 @@
+;$Id$
+name = Feeds: Slideshare
+description = Adds a Slideshare feed processor to the Feeds module.
+package = Feeds
+dependencies[] = feeds
+core = 6.x
+php = 5.2

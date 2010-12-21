@@ -1,0 +1,18 @@
+<?php
+// $Id$
+
+/**
+ * Implementation of hook_enable()
+ */
+function feeds_slideshare_enable() {
+  //clear the cache to display in Feeds as available plugin.
+  cache_clear_all('plugins:feeds:plugins', 'cache');
+}
+
+/**
+ * Implementation of hook_disable()
+ */
+function feeds_slideshare_disable() {
+  //clear the cache to remove from Feeds available plugins
+  cache_clear_all('plugins:feeds:plugins', 'cache');
+}
